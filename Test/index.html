@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trang web bóng đá cơ bản</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Trang web Bóng đá</h1>
+      <div class="controls">
+        <input id="search" type="search" placeholder="Tìm đội hoặc giải..." />
+        <button id="toggleTheme" aria-pressed="false">Chế độ tối</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="intro">
+      <h2>Giới thiệu</h2>
+      <p>Trang web đơn giản để hiển thị đội bóng, lịch thi đấu và thông tin cơ bản. Dùng để minh họa HTML/CSS/JS cho môn học hoặc demo nhanh.</p>
+    </section>
+
+    <section id="teams">
+      <h2>Đội bóng</h2>
+      <div id="teamsList" class="grid"></div>
+    </section>
+
+    <section id="matches">
+      <h2>Trận đấu sắp tới</h2>
+      <ul id="matchesList" class="matches"></ul>
+    </section>
+
+    <section id="about">
+      <h2>Thông tin</h2>
+      <p>Tạo bởi bạn. Mở file <code>index.html</code> trong trình duyệt để xem. File script sẽ render dữ liệu mẫu.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Trang web Bóng đá cơ bản</div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

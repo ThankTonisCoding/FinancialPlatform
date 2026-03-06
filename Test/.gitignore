@@ -1,0 +1,4 @@
+# Ignore node modules and common temp
+node_modules/
+.DS_Store
+.env

@@ -1,0 +1,44 @@
+/* styles.css - giao diện đơn giản, responsive */
+:root{
+  --bg:#ffffff;
+  --text:#222;
+  --muted:#666;
+  --accent:#0077cc;
+}
+
+[data-theme="dark"]{
+  --bg:#0b0f14;
+  --text:#e6eef6;
+  --muted:#9fb4c8;
+  --accent:#3aa0ff;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Segoe UI, Roboto, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.4;
+}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+.site-header{background:linear-gradient(90deg,var(--accent),#005a99);color:#fff;padding:1rem 0}
+.site-header h1{margin:0;font-size:1.25rem}
+.controls{display:flex;gap:.5rem;align-items:center;margin-top:.5rem}
+.controls input{padding:.5rem;border-radius:6px;border:1px solid rgba(255,255,255,.15);min-width:180px}
+.controls button{padding:.45rem .6rem;border-radius:6px;border:none;background:rgba(0,0,0,.15);color:#fff}
+
+h2{margin-top:1.25rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem}
+.card{background:rgba(0,0,0,.04);padding:1rem;border-radius:8px}
+.card h3{margin:.2rem 0}
+.muted{color:var(--muted);font-size:.95rem}
+.matches{list-style:none;padding:0;margin:0;display:grid;gap:.5rem}
+.match{display:flex;justify-content:space-between;padding:.6rem;border-radius:8px;background:rgba(0,0,0,.03)}
+.site-footer{padding:1rem 0;margin-top:2rem;text-align:center;color:var(--muted)}
+
+@media (max-width:600px){
+  .controls{flex-direction:column;align-items:stretch}
+  .controls input{width:100%}
+}
